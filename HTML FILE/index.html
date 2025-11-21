@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="../CSS FILE/style.css">
+</head>
+<body>
+    <div class="name-modal" id="name-modal">
+        <div class="modal-content">
+            <h3>Masukkan Nama: </h3>
+            <input type="text" placeholder="name" id="userNameInput" required>
+            <button onclick="saveName()">Enter</button>
+        </div>
+    </div>
+
+    <header>
+        <div class="container-navbar">
+            <div class="nav-icon">
+                <img src="gura.jpeg" alt="gura">
+            </div>
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <a href="#">Home</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="portofolio.html">Portofolio</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="welcomeBox">
+            <h1 id="welcomeMSG">Hi Guest, Welcome to my Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+        </div>
+        <div class="mid-content">
+        </div>
+    </main>
+
+    <section class="headquarter">
+        <h2>Our Headquarter</h2>
+        <div class="hq-location">
+            <div class="location-item">
+                <div class="circle"></div>
+                <p>Jakarta</p>
+            </div>
+            <div class="location-item">
+                <div class="circle"></div>
+                <p>Bandung</p>
+            </div>
+            <div class="location-item">
+                <div class="circle"></div>
+                <p>Surabaya</p>
+            </div>
+            <div class="location-item">
+                <div class="circle"></div>
+                <p>Tangerang</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Message Us</h2>
+        <div class="forName">
+            <p>Nama:</p>
+            <input type="text">
+        </div>
+        <div class="forDOB">
+            <p>Tanggal Lahir:</p>
+            <input type="date">
+        </div>
+        <div class="forGender">
+            <p>Jenis Kelamin:</p>
+            <input type="radio" id="laki" value="laki-laki"><label for="laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" value="perempuan"><label for="perempuan">Perempuan</label>
+        </div>
+        <div class="forMSG">
+            <p>Pesan:</p>
+            <textarea></textarea>
+        </div>
+        <button>Submit</button>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2023 My Website</p>
+    </footer>
+
+    </div>
+    <script src="../JAVASCRIPT FILE/script.js"></script>
+</body>
+</html>
