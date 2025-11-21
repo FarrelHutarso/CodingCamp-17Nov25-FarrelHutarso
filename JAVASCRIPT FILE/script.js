@@ -54,5 +54,38 @@ window.onload = function(){
         // kalau belum ada nama
         modal.style.display = 'flex';
     }
+
+    // Start clock in preview box
+    updateTime();
+    setInterval(updateTime, 1000);
+
+    // Wire contact form submit to preview update
+    const contactForm = document.getElementById('contactForm');
+    if(contactForm){
+        contactForm.addEventListener('submit', function(e){
+            e.preventDefault();
+            const name = document.getElementById('contactName').value.trim();
+            const dob = document.getElementById('contactDOB').value;
+            const genderEl = document.querySelector('input[name="gender"]:checked');
+            const gender = genderEl ? genderEl.value : '-';
+            const message = document.getElementById('contactMessage').value.trim();
+
+            document.getElementById('previewName').textContent = name || '-';
+            document.getElementById('previewDOB').textContent = dob || '-';
+            document.getElementById('previewGender').textContent = gender || '-';
+            document.getElementById('previewMessage').textContent = message || '-';
+
+            // Optionally clear the form after submit (commented out):
+            // contactForm.reset();
+        });
+    }
 };
+
+function updateTime(){
+    const now = new Date();
+    // Format: e.g., Fri Jun 17 2022 11:27:28 GMT+0100
+    const formatted = now.toString();
+    const el = document.getElementById('currentTime');
+    if(el) el.textContent = formatted;
+}
 

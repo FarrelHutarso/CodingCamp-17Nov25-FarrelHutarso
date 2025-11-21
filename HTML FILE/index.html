@@ -70,28 +70,54 @@
 
     <section class="contact">
         <h2>Message Us</h2>
-        <div class="forName">
-            <p>Nama:</p>
-            <input type="text">
+        <div class="contact-wrapper">
+            <form id="contactForm" class="contact-left">
+                <div class="form-row">
+                    <label for="contactName">Nama</label>
+                    <input id="contactName" name="name" type="text" placeholder="Nama">
+                </div>
+
+                <div class="form-row">
+                    <label for="contactDOB">Tanggal Lahir</label>
+                    <input id="contactDOB" name="dob" type="date">
+                </div>
+
+                <div class="form-row form-row--gender">
+                    <label>Jenis Kelamin</label>
+                    <div class="gender-options">
+                        <input type="radio" id="genderLaki" name="gender" value="Laki - Laki">
+                        <label for="genderLaki">Laki-Laki</label>
+                        <input type="radio" id="genderPerempuan" name="gender" value="Perempuan">
+                        <label for="genderPerempuan">Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="contactMessage">Pesan</label>
+                    <textarea id="contactMessage" name="message" rows="6" placeholder="Pesan"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" id="contactSubmit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+
+            <aside class="contact-right">
+                <div class="preview-box">
+                    <p class="time-label">Current time : <span id="currentTime"></span></p>
+                    <div class="preview-content">
+                        <p><strong>Nama :</strong> <span id="previewName">-</span></p>
+                        <p><strong>Tanggal Lahir :</strong> <span id="previewDOB">-</span></p>
+                        <p><strong>Jenis Kelamin :</strong> <span id="previewGender">-</span></p>
+                        <p><strong>Pesan :</strong> <span id="previewMessage">-</span></p>
+                    </div>
+                </div>
+            </aside>
         </div>
-        <div class="forDOB">
-            <p>Tanggal Lahir:</p>
-            <input type="date">
-        </div>
-        <div class="forGender">
-            <p>Jenis Kelamin:</p>
-            <input type="radio" id="laki" value="laki-laki"><label for="laki">Laki-Laki</label>
-            <input type="radio" id="perempuan" value="perempuan"><label for="perempuan">Perempuan</label>
-        </div>
-        <div class="forMSG">
-            <p>Pesan:</p>
-            <textarea></textarea>
-        </div>
-        <button>Submit</button>
     </section>
 
     <footer>
-        <p>Copyright &copy; 2023 My Website</p>
+        <p>Copyright &copy; 2024 My Website</p>
     </footer>
 
     </div>

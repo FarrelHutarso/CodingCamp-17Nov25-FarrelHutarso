@@ -197,5 +197,102 @@ html{
 
 footer{
     text-align: right;
-    padding: 10px;
+    padding: 50px;
+    border-top: 1px solid black;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.contact-wrapper{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.contact-left{
+    flex: 1 1 55%;
+    max-width: 55%;
+}
+
+.contact-right{
+    flex: 1 1 40%;
+    max-width: 40%;
+}
+
+.contact-left .form-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.contact-left .form-row label{
+    width: 140px;
+    font-size: 14px;
+    color: #111;
+}
+
+.contact-left .form-row input[type="text"],
+.contact-left .form-row input[type="date"],
+.contact-left .form-row textarea{
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.contact-left .form-row textarea{
+    resize: vertical;
+    min-height: 110px;
+}
+
+.form-row--gender .gender-options{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.gender-options input[type="radio"]{
+    margin-right: 4px;
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #999;
+    background: #eee;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    transform: translateY(-1px);
+}
+
+.preview-box{
+    border: 2px solid #444;
+    padding: 18px;
+    min-height: 220px;
+    background: #fff;
+}
+
+.time-label{
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.preview-content p{
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+/* Small screens: stack columns */
+@media (max-width: 800px){
+    .contact-wrapper{flex-direction: column;}
+    .contact-left, .contact-right{max-width: 100%;}
+    .contact-left .form-row label{width: 120px;}
 }
