@@ -321,3 +321,78 @@ footer{
     .contact-left, .contact-right{max-width: 100%;}
     .contact-left .form-row label{width: 120px;}
 }
+
+/* Profile page styles */
+.profile-page{
+    padding: 40px 60px;
+}
+.profile-hero-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.profile-hero-title h1{
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+.profile-intro .profile-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.profile-left{
+    flex: 1 1 55%;
+}
+.profile-left h2{
+    font-size: 26px;
+    margin: 0 0 8px 0;
+}
+.profile-left .subtitle{
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.profile-left .years{
+    color: #333;
+    margin-bottom: 12px;
+}
+.profile-left .short-desc{
+    font-style: italic;
+    color: #666;
+    margin-bottom: 18px;
+}
+.contact-me{
+    background: #e9f0ea;
+    border: 1px solid #d2dfd3;
+    padding: 12px 22px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.profile-right{
+    flex: 0 0 280px;
+    display: flex;
+    justify-content: center;
+}
+.avatar-wrap{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffd84d;
+    border: 6px solid #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.avatar{
+    width: 85%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width:900px){
+    .profile-intro .profile-inner{flex-direction:column; align-items:center}
+    .profile-right{margin-top:20px}
+}
