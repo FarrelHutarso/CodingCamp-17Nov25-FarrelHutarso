@@ -254,10 +254,36 @@ footer{
     display: flex;
     gap: 12px;
     align-items: center;
+    text-align: center;
 }
 
 .gender-options input[type="radio"]{
-    margin-right: 4px;
+    transform: scale(1.25);
+    margin-right: 6px;
+    vertical-align: middle;
+    accent-color: #000;
+}
+
+.gender-options label{
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.gender-options label{
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 1.2;
+}
+
+.form-row--gender > label{
+    width: 170px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.form-row--gender > label::after{
+    content: " :";
+    margin-left: 4px;
 }
 
 .submit-btn{
@@ -290,7 +316,6 @@ footer{
     font-size: 14px;
 }
 
-/* Small screens: stack columns */
 @media (max-width: 800px){
     .contact-wrapper{flex-direction: column;}
     .contact-left, .contact-right{max-width: 100%;}
