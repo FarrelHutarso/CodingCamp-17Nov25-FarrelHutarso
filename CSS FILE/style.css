@@ -374,6 +374,10 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+.profile-inner{
+    margin-bottom: 40%;
+}
 .avatar-wrap{
     width: 220px;
     height: 220px;
@@ -382,14 +386,14 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffd84d;
-    border: 6px solid #fff;
+    border: 1px solid white;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 .avatar{
-    width: 85%;
+    width: 95%;
     height: auto;
     display: block;
+    border-radius: 100%;
 }
 
 @media (max-width:900px){
